@@ -53,10 +53,15 @@ These are not stages. They run *through every stage*.
 1. **Building the wrong thing** — no PM to push back → *Discovery* + *Design* exist to catch this.
 2. **Building it in a way that rots** — no reviewer, so shortcuts compound → *Review* + the *Discipline* layer exist to catch this.
 
+## Field notes — the principles, proven
+
+[**field-notes.md**](field-notes.md) grounds this playbook in ten real patterns pulled from a production SaaS — tolerant number parsing, ownership-before-mutate (IDOR), turning a footgun into an executable lint, wide-event logging, provider failover, cross-tenant SQL leaks, and more. Each is generalized (no client/vendor specifics) and mapped to the stage it teaches. Read it when a principle here feels abstract — these are the incidents that made the rules.
+
 ## How to use this repo
 
 - Each stage and layer has its own file: a short intro, why it matters more when solo, key practices, tooling, and a TODO checklist.
 - Each topic also has a tracked **GitHub issue** — work through them, check items off, add what you learn.
+- [Field notes](field-notes.md) hold the real war-stories behind the principles.
 - This is a living document. When a project teaches you something, write it back here so the next project starts smarter.
 
 ---
